@@ -1,0 +1,695 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>四旋翼飞正方形(速度控制) · AirSim</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="易安">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-darcula.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="6.html" />
+    
+    
+    <link rel="prev" href="4.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    AirSim 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../unity/">
+            
+                <a href="../unity/">
+            
+                    
+                    AirSim & Unity 环境搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../unity/1.html">
+            
+                <a href="../unity/1.html">
+            
+                    
+                    setting 设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../unity/3.html">
+            
+                <a href="../unity/3.html">
+            
+                    
+                    hello Drone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../unity/2.html">
+            
+                <a href="../unity/2.html">
+            
+                    
+                    使用 DroneShell 控制无人机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../unity/4.html">
+            
+                <a href="../unity/4.html">
+            
+                    
+                    AirSim & Unity 多无人机
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    AirSim & Unreal 环境搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    在 UE 工程中使用 AirSim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    用遥控器开飞机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    控制四旋翼起飞和降落(airsim api)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    控制四旋翼的飞行(core api)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    四旋翼飞正方形(速度控制)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    Unreal 环境及模型设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    无人机相关 API 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    AirSim 数据图像收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    坐标系 coordinate system
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="doing.html">
+            
+                <a href="doing.html">
+            
+                    
+                    后续工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../work/">
+            
+                <a href="../work/">
+            
+                    
+                    工作记录一
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../work/1.html">
+            
+                <a href="../work/1.html">
+            
+                    
+                    工作日志二
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >四旋翼飞正方形(速度控制)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x56DB;&#x65CB;&#x7FFC;&#x98DE;&#x6B63;&#x65B9;&#x5F62;&#x901F;&#x5EA6;&#x63A7;&#x5236;"><b></b>&#x56DB;&#x65CB;&#x7FFC;&#x98DE;&#x6B63;&#x65B9;&#x5F62;(&#x901F;&#x5EA6;&#x63A7;&#x5236;)</a></li></ul></div><a href="#&#x56DB;&#x65CB;&#x7FFC;&#x98DE;&#x6B63;&#x65B9;&#x5F62;&#x901F;&#x5EA6;&#x63A7;&#x5236;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x56DB;&#x65CB;&#x7FFC;&#x98DE;&#x6B63;&#x65B9;&#x5F62;&#x901F;&#x5EA6;&#x63A7;&#x5236;"><a name="&#x56DB;&#x65CB;&#x7FFC;&#x98DE;&#x6B63;&#x65B9;&#x5F62;&#x901F;&#x5EA6;&#x63A7;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x56DB;&#x65CB;&#x7FFC;&#x98DE;&#x6B63;&#x65B9;&#x5F62;&#x901F;&#x5EA6;&#x63A7;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56DB;&#x65CB;&#x7FFC;&#x98DE;&#x6B63;&#x65B9;&#x5F62;(&#x901F;&#x5EA6;&#x63A7;&#x5236;)</h1>
+<h3 id="&#x76F8;&#x673A;&#x89C6;&#x89D2;"><a name="&#x76F8;&#x673A;&#x89C6;&#x89D2;" class="anchor-navigation-ex-anchor" href="#&#x76F8;&#x673A;&#x89C6;&#x89D2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x76F8;&#x673A;&#x89C6;&#x89D2;</h3>
+<p>&#x70B9;&#x51FB; &#x8FD0;&#x884C;/Play &#x6309;&#x94AE;&#x540E;&#xFF0C;&#x4E2D;&#x95F4;&#x7684;&#x89C6;&#x89D2;&#x9ED8;&#x8BA4;&#x662F;&#x8DDF;&#x968F;&#x89C6;&#x89D2;&#xFF0C;&#x89C6;&#x89D2;&#x7684;&#x8BBE;&#x7F6E;&#x51B3;&#x5B9A;&#x4E86;&#x6444;&#x50CF;&#x673A;&#x5982;&#x4F55;&#x8DDF;&#x968F;&#x56DB;&#x65CB;&#x7FFC;&#xFF0C;&#x5BF9;&#x4E8E;&#x56DB;&#x65CB;&#x7FFC;&#x6765;&#x8BF4;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x8DDF;&#x968F;/Flywithme &#x6A21;&#x5F0F;&#xFF0C;&#x5BF9;&#x4E8E;&#x6C7D;&#x8F66;&#x6765;&#x8BF4;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F; SpringArmChase &#x6A21;&#x5F0F;&#x3002;&#x4E0B;&#x9762;&#x5217;&#x51FA;&#x8FD9;&#x4E9B;&#x6A21;&#x5F0F;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x6309;&#x952E;</th>
+<th>&#x6A21;&#x5F0F;</th>
+<th>&#x89E3;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>B</code></td>
+<td>&#x8DDF;&#x968F;/FlyWithMe</td>
+<td>&#x4EE5; 6 &#x81EA;&#x7531;&#x5EA6;&#x8DDF;&#x968F;&#x56DB;&#x65CB;&#x7FFC;</td>
+</tr>
+<tr>
+<td><code>F</code></td>
+<td>FPV</td>
+<td>&#x673A;&#x8F7D;&#x6444;&#x50CF;&#x5934;&#x89C6;&#x89D2;</td>
+</tr>
+<tr>
+<td><code>\</code></td>
+<td>&#x5730;&#x9762;&#x89C2;&#x5BDF;&#x8005;/GroundObserver</td>
+<td>&#x5728;&#x5730;&#x9762;&#x4E0A;&#x4EE5; XY &#x5E73;&#x9762;&#x81EA;&#x7531;&#x5EA6;&#x8DDF;&#x968F;&#x56DB;&#x65CB;&#x7FFC;</td>
+</tr>
+<tr>
+<td><code>M</code></td>
+<td>&#x624B;&#x52A8;/Manual</td>
+<td>&#x624B;&#x52A8;&#x8BBE;&#x7F6E;&#x6444;&#x50CF;&#x673A;&#x7684;&#x4F4D;&#x7F6E;</td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td>&#x5F39;&#x6027;&#x673A;&#x81C2;&#x8DDF;&#x968F;/SpringArmChase</td>
+<td>&#x6444;&#x50CF;&#x673A;&#x56FA;&#x5B9A;&#x5728;&#x4E00;&#x4E2A;&#x9690;&#x5F62;&#x7684;&#x4E0E;&#x6C7D;&#x8F66;&#x8FDE;&#x5728;&#x4E00;&#x8D77;&#x7684;&#x5F39;&#x6027;&#x673A;&#x81C2;&#x4E0A;&#xFF0C;&#x8DDF;&#x968F;&#x6C7D;&#x8F66;&#xFF0C;&#x6240;&#x4EE5;&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x65F6;&#x5EF6;</td>
+</tr>
+<tr>
+<td></td>
+<td>NoDisplay</td>
+<td>&#x4E0D;&#x663E;&#x793A;&#x753B;&#x9762;&#xFF0C;&#x8FD9;&#x53EF;&#x4EE5;&#x63D0;&#x9AD8;&#x6E32;&#x67D3;&#x6027;&#x80FD;&#xFF0C;&#x800C;&#x4E14;&#x4E0D;&#x5F71;&#x54CD; APIs</td>
+</tr>
+</tbody>
+</table>
+<p>&#x6309; M &#x6309;&#x952E;&#x8FDB;&#x5165;&#x624B;&#x52A8;&#x8BBE;&#x7F6E;&#x6A21;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x6444;&#x50CF;&#x673A;&#x7684;&#x4F4D;&#x7F6E;&#xFF1A;</p>
+<ul>
+<li>&#x65B9;&#x5411;&#x952E;&#xFF1A;&#x524D;&#x8FDB;&#x3001;&#x540E;&#x9000;&#x3001;&#x5411;&#x5DE6;&#x3001;&#x5411;&#x53F3;&#x79FB;&#x52A8;</li>
+<li>page up/down&#xFF1A;&#x4E0A;&#x4E0B;&#x79FB;&#x52A8;</li>
+<li>W&#xFF0C;S &#x6309;&#x952E;&#xFF1A;&#x4FEF;&#x4EF0;&#x8F6C;&#x52A8;</li>
+<li>A&#xFF0C;D &#x6309;&#x952E;&#xFF1A;&#x504F;&#x822A;&#x8F6C;&#x52A8;</li>
+</ul>
+<h4 id="&#x56DB;&#x65CB;&#x7FFC;&#x98DE;&#x6B63;&#x65B9;&#x5F62;"><a name="&#x56DB;&#x65CB;&#x7FFC;&#x98DE;&#x6B63;&#x65B9;&#x5F62;" class="anchor-navigation-ex-anchor" href="#&#x56DB;&#x65CB;&#x7FFC;&#x98DE;&#x6B63;&#x65B9;&#x5F62;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56DB;&#x65CB;&#x7FFC;&#x98DE;&#x6B63;&#x65B9;&#x5F62;</h4>
+<pre class="language-"><code class="lang-py"><span class="token keyword">import</span> airsim
+<span class="token keyword">import</span> time
+&#x200B;
+client <span class="token operator">=</span> airsim<span class="token punctuation">.</span>MultirotorClient<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># connect to theAirSim simulator</span>
+client<span class="token punctuation">.</span>enableApiControl<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>       <span class="token comment"># &#x83B7;&#x53D6;&#x63A7;&#x5236;&#x6743;</span>
+client<span class="token punctuation">.</span>armDisarm<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>              <span class="token comment"># &#x89E3;&#x9501;</span>
+client<span class="token punctuation">.</span>takeoffAsync<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>        <span class="token comment"># &#x7B2C;&#x4E00;&#x9636;&#x6BB5;&#xFF1A;&#x8D77;&#x98DE;</span>
+&#x200B;
+client<span class="token punctuation">.</span>moveToZAsync<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment"># &#x7B2C;&#x4E8C;&#x9636;&#x6BB5;&#xFF1A;&#x4E0A;&#x5347;&#x5230;2&#x7C73;&#x5EA6;</span>
+&#x200B;
+<span class="token comment"># &#x98DE;&#x6B63;&#x65B9;&#x5F62;</span>
+client<span class="token punctuation">.</span>moveByVelocityZAsync<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>     <span class="token comment"># &#x7B2C;&#x9636;&#x6BB5;&#xFF1A;&#x4EE5;1m/s&#x901F;&#x5EA6;&#x5411;&#x524D;&#x98DE;8&#x79D2;&#x949F;</span>
+client<span class="token punctuation">.</span>moveByVelocityZAsync<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>     <span class="token comment"># &#x7B2C;&#x9636;&#x6BB5;&#xFF1A;&#x4EE5;1m/s&#x901F;&#x5EA6;&#x5411;&#x53F3;&#x98DE;8&#x79D2;&#x949F;</span>
+client<span class="token punctuation">.</span>moveByVelocityZAsync<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>    <span class="token comment"># &#x7B2C;&#x9636;&#x6BB5;&#xFF1A;&#x4EE5;1m/s&#x901F;&#x5EA6;&#x5411;&#x540E;&#x98DE;8&#x79D2;&#x949F;</span>
+client<span class="token punctuation">.</span>moveByVelocityZAsync<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>    <span class="token comment"># &#x7B2C;&#x9636;&#x6BB5;&#xFF1A;&#x4EE5;1m/s&#x901F;&#x5EA6;&#x5411;&#x5DE6;&#x98DE;8&#x79D2;&#x949F;</span>
+&#x200B;
+<span class="token comment"># &#x60AC;&#x505C; 2 &#x79D2;&#x949F;</span>
+client<span class="token punctuation">.</span>hoverAsync<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>          <span class="token comment"># &#x7B2C;&#x56DB;&#x9636;&#x6BB5;&#xFF1A;&#x60AC;&#x505C;6&#x79D2;&#x949F;</span>
+time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">)</span>
+ &#x200B;
+client<span class="token punctuation">.</span>landAsync<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>           <span class="token comment"># &#x7B2C;&#x4E94;&#x9636;&#x6BB5;&#xFF1A;&#x964D;&#x843D;</span>
+client<span class="token punctuation">.</span>armDisarm<span class="token punctuation">(</span><span class="token boolean">False</span><span class="token punctuation">)</span>             <span class="token comment"># &#x4E0A;&#x9501;</span>
+client<span class="token punctuation">.</span>enableApiControl<span class="token punctuation">(</span><span class="token boolean">False</span><span class="token punctuation">)</span>      <span class="token comment"># &#x91CA;&#x653E;&#x63A7;&#x5236;&#x6743;</span>
+</code></pre>
+<p>&#x901F;&#x5EA6;&#x63A7;&#x5236; API&#xFF1A;</p>
+<pre class="language-"><code class="lang-py"><span class="token keyword">def</span> <span class="token function">moveByVelocityZAsync</span><span class="token punctuation">(</span>
+    self<span class="token punctuation">,</span>
+    vx<span class="token punctuation">,</span>  <span class="token comment"># &#x5168;&#x5C40;&#x5750;&#x6807;&#x7CFB;&#x4E0B;x&#x8F74;&#x65B9;&#x5411;&#x4E0A;&#x7684;&#x901F;&#x5EA6;</span>
+    vy<span class="token punctuation">,</span>  <span class="token comment"># &#x5168;&#x5C40;&#x5750;&#x6807;&#x7CFB;&#x4E0B;y&#x8F74;&#x65B9;&#x5411;&#x4E0A;&#x7684;&#x901F;&#x5EA6;</span>
+    z<span class="token punctuation">,</span>   <span class="token comment"># &#x5168;&#x5C40;&#x5750;&#x6807;&#x7CFB;&#x4E0B;&#x7684;&#x9AD8;&#x5EA6;</span>
+    duration<span class="token punctuation">,</span> <span class="token comment"># &#x6301;&#x7EED;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x5355;&#x4F4D;&#xFF1A;&#x79D2;</span>
+    drivetrain<span class="token operator">=</span>DrivetrainType<span class="token punctuation">.</span>MaxDegreeOfFreedom<span class="token punctuation">,</span> <span class="token comment"># &#x504F;&#x822A;&#x63A7;&#x5236;</span>
+    yaw_mode<span class="token operator">=</span>YawMode<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    vehicle_name<span class="token operator">=</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment"># &#x5728;&#x591A;&#x673A;&#x534F;&#x540C;&#x7684;&#x65F6;&#x5019;&#x518D;&#x7528;&#x5230;</span>
+     <span class="token punctuation">)</span>
+</code></pre>
+<blockquote>
+<p><strong>[!TIP] </strong>
+&#x56DB;&#x65CB;&#x7FFC;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x7EBF;&#x6027;&#x7CFB;&#x7EDF;&#xFF0C;&#x7ED9;&#x4E00;&#x4E2A;&#x901F;&#x5EA6;&#x6307;&#x4EE4;&#xFF0C;&#x5B83;&#x662F;&#x4E0D;&#x53EF;&#x80FD;&#x77AC;&#x65F6;&#x8FBE;&#x5230;&#x7684;&#xFF0C;&#x800C;&#x4E14;&#x8FD9;&#x4E2A;&#x901F;&#x5EA6;&#x6307;&#x4EE4;&#x4E0E;&#x5F53;&#x524D;&#x7684;&#x901F;&#x5EA6;&#x4E4B;&#x5DEE;&#x8D8A;&#x5927;&#xFF0C;&#x5230;&#x8FBE;&#x8FD9;&#x4E2A;&#x901F;&#x5EA6;&#x6307;&#x4EE4;&#x7684;&#x8C03;&#x8282;&#x65F6;&#x95F4;&#x5C31;&#x8D8A;&#x957F;&#x3002;&#x6240;&#x4EE5;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x6700;&#x540E;&#x7684;&#x56DB;&#x65CB;&#x7FFC;&#x5E76;&#x6CA1;&#x6709;&#x56DE;&#x5230;&#x8D77;&#x70B9;&#x4F4D;&#x7F6E;&#x3002;</p>
+</blockquote>
+<h3 id="python-&#x591A;&#x7EBF;&#x7A0B;&#xFF08;&#x98DE;&#x884C;&#x540C;&#x65F6;&#x6253;&#x5370;-gps-&#x4FE1;&#x606F;&#xFF09;"><a name="python-&#x591A;&#x7EBF;&#x7A0B;&#xFF08;&#x98DE;&#x884C;&#x540C;&#x65F6;&#x6253;&#x5370;-gps-&#x4FE1;&#x606F;&#xFF09;" class="anchor-navigation-ex-anchor" href="#python-&#x591A;&#x7EBF;&#x7A0B;&#xFF08;&#x98DE;&#x884C;&#x540C;&#x65F6;&#x6253;&#x5370;-gps-&#x4FE1;&#x606F;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>python &#x591A;&#x7EBF;&#x7A0B;&#xFF08;&#x98DE;&#x884C;&#x540C;&#x65F6;&#x6253;&#x5370; GPS &#x4FE1;&#x606F;&#xFF09;</h3>
+<blockquote>
+<p><strong>[!TIP] </strong>
+AirSim &#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x8FDB;&#x884C;&#x4E24;&#x4E2A;&#x8FDE;&#x63A5;&#xFF0C;&#x4E24;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E0D;&#x80FD;&#x5171;&#x7528;&#x4E00;&#x4E2A; <code>client = airsim.MultirotorClient()</code>&#xFF0C;&#x4E24;&#x4E2A;&#x7EBF;&#x7A0B;&#x5171;&#x7528;&#x4E00;&#x4E2A;&#x8FDE;&#x63A5;&#x4F1A;&#x62A5;&#x901A;&#x8BAF;&#x534F;&#x8BAE;&#x76F8;&#x5173;&#x9519;&#x8BEF;</p>
+</blockquote>
+<pre class="language-"><code class="lang-py"><span class="token keyword">import</span> airsim
+<span class="token keyword">import</span> time
+<span class="token keyword">import</span> threading
+
+client <span class="token operator">=</span> airsim<span class="token punctuation">.</span>MultirotorClient<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># connect to the AirSim simulator</span>
+client2 <span class="token operator">=</span> airsim<span class="token punctuation">.</span>MultirotorClient<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+client<span class="token punctuation">.</span>enableApiControl<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>       <span class="token comment"># &#x83B7;&#x53D6;&#x63A7;&#x5236;&#x6743;</span>
+client<span class="token punctuation">.</span>armDisarm<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>              <span class="token comment"># &#x89E3;&#x9501;</span>
+client<span class="token punctuation">.</span>takeoffAsync<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>        <span class="token comment"># &#x7B2C;&#x4E00;&#x9636;&#x6BB5;&#xFF1A;&#x8D77;&#x98DE;</span>
+
+<span class="token keyword">def</span> <span class="token function">GetGps</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+        gps_data <span class="token operator">=</span> client2<span class="token punctuation">.</span>getGpsData<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>gps_data<span class="token punctuation">.</span>gnss<span class="token punctuation">.</span>geo_point<span class="token punctuation">)</span>
+        time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+
+t1 <span class="token operator">=</span> threading<span class="token punctuation">.</span>Thread<span class="token punctuation">(</span>target<span class="token operator">=</span>GetGps<span class="token punctuation">)</span>
+t1<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+client<span class="token punctuation">.</span>moveToZAsync<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment"># &#x7B2C;&#x4E8C;&#x9636;&#x6BB5;&#xFF1A;&#x4E0A;&#x5347;&#x5230;2&#x7C73;&#x9AD8;&#x5EA6;</span>
+<span class="token comment"># &#x98DE;&#x6B63;&#x65B9;&#x5F62;</span>
+client<span class="token punctuation">.</span>moveByVelocityZAsync<span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>     <span class="token comment"># &#x7B2C;&#x4E09;&#x9636;&#x6BB5;&#xFF1A;&#x4EE5;8m/s&#x901F;&#x5EA6;&#x5411;&#x524D;&#x98DE;2&#x79D2;&#x949F;</span>
+client<span class="token punctuation">.</span>moveByVelocityZAsync<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>     <span class="token comment"># &#x7B2C;&#x4E09;&#x9636;&#x6BB5;&#xFF1A;&#x4EE5;8m/s&#x901F;&#x5EA6;&#x5411;&#x53F3;&#x98DE;2&#x79D2;&#x949F;</span>
+client<span class="token punctuation">.</span>moveByVelocityZAsync<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>    <span class="token comment"># &#x7B2C;&#x4E09;&#x9636;&#x6BB5;&#xFF1A;&#x4EE5;8m/s&#x901F;&#x5EA6;&#x5411;&#x540E;&#x98DE;2&#x79D2;&#x949F;</span>
+client<span class="token punctuation">.</span>moveByVelocityZAsync<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>    <span class="token comment"># &#x7B2C;&#x4E09;&#x9636;&#x6BB5;&#xFF1A;&#x4EE5;8m/s&#x901F;&#x5EA6;&#x5411;&#x5DE6;&#x98DE;2&#x79D2;&#x949F;</span>
+<span class="token comment"># &#x60AC;&#x505C; 2 &#x79D2;&#x949F;</span>
+client<span class="token punctuation">.</span>hoverAsync<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>          <span class="token comment"># &#x7B2C;&#x56DB;&#x9636;&#x6BB5;&#xFF1A;&#x60AC;&#x505C;6&#x79D2;&#x949F;</span>
+time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">)</span>
+client<span class="token punctuation">.</span>landAsync<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>           <span class="token comment"># &#x7B2C;&#x4E94;&#x9636;&#x6BB5;&#xFF1A;&#x964D;&#x843D;</span>
+client<span class="token punctuation">.</span>armDisarm<span class="token punctuation">(</span><span class="token boolean">False</span><span class="token punctuation">)</span>             <span class="token comment"># &#x4E0A;&#x9501;</span>
+client<span class="token punctuation">.</span>enableApiControl<span class="token punctuation">(</span><span class="token boolean">False</span><span class="token punctuation">)</span>      <span class="token comment"># &#x91CA;&#x653E;&#x63A7;&#x5236;&#x6743;</span>
+
+<span class="token comment"># gps_data:</span>
+<span class="token comment"># &lt;GpsData&gt;</span>
+<span class="token comment"># {</span>
+<span class="token comment">#     &apos;gnss&apos;: &lt;GnssReport&gt;</span>
+<span class="token comment">#           {</span>
+<span class="token comment">#               &apos;eph&apos;: 0.12108179926872253,</span>
+<span class="token comment">#               &apos;fix_type&apos;: 3,</span>
+<span class="token comment">#               &apos;geo_point&apos;: &lt;GeoPoint&gt; {   &apos;altitude&apos;: 114.63304901123047,</span>
+<span class="token comment">#                                           &apos;latitude&apos;: 47.641468000001176,</span>
+<span class="token comment">#                                           &apos;longitude&apos;: -122.14016499999315</span>
+<span class="token comment">#                                       },</span>
+<span class="token comment">#               &apos;time_utc&apos;: 1669858302378736,</span>
+<span class="token comment">#               &apos;velocity&apos;: &lt;Vector3r&gt; {    &apos;x_val&apos;: -3.9472894286518567e-07,</span>
+<span class="token comment">#                                           &apos;y_val&apos;: -1.6675492133799708e-06,</span>
+<span class="token comment">#                                           &apos;z_val&apos;: -0.4948185384273529</span>
+<span class="token comment">#                                      }</span>
+<span class="token comment">#           },</span>
+<span class="token comment">#     &apos;is_valid&apos;: True,</span>
+<span class="token comment">#     &apos;time_stamp&apos;: 1669858302378736640</span>
+<span class="token comment"># }</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; https://yian-code.github.io/yian/ all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-12-01 11:38:33
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="4.html" class="navigation navigation-prev " aria-label="Previous page: 控制四旋翼的飞行(core api)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="6.html" class="navigation navigation-next " aria-label="Next page: Unreal 环境及模型设置">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"四旋翼飞正方形(速度控制)","level":"1.3.5","depth":2,"next":{"title":"Unreal 环境及模型设置","level":"1.3.6","depth":2,"path":"ue/6.md","ref":"ue/6.md","articles":[]},"previous":{"title":"控制四旋翼的飞行(core api)","level":"1.3.4","depth":2,"path":"ue/4.md","ref":"ue/4.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","-default-theme","search-pro","theme-comscore","splitter","tbfed-pagefooter","expandable-chapters","hide-element","custom-favicon","-highlight","prism","prism-themes","code","sectionx","flexible-alerts","ancre-navigation"],"root":".","styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy https://yian-code.github.io/yian/","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-darcula.css"]},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"pdf":{"pageNumbers":true,"fontFamily":"Arial","fontSize":12,"paperSize":"a4","margin":{"right":62,"left":62,"top":56,"bottom":56}},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"favicon":"favicon.ico","theme-comscore":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"prism-themes":{},"custom-favicon":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"易安","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"AirSim","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"AirSim note"},"file":{"path":"ue/5.md","mtime":"2022-12-01T03:38:33.172Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-12-28T05:31:52.060Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
